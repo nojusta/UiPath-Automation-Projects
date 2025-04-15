@@ -1,0 +1,14 @@
+.local/
+.objects/
+.entities/
+.project/
+.settings/
+.templates/
+.storage/
+.tmh/
+.screenshots/
+.idea/
+.vscode/
+*.tmp
+*.user
+*.lock
