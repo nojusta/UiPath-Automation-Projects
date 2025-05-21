@@ -2,6 +2,20 @@
 
 This repository contains automation workflows created using UiPath Studio. Each project showcases how RPA can handle repetitive tasks efficiently by interacting with files, websites, and user interfaces.
 
+## linkedin-job-scraper
+
+This project automates the process of searching for jobs on LinkedIn based on user-defined criteria. The workflow:
+- Prompts the user to select or enter:
+  - The desired job field (converted to English for search consistency).
+  - A preferred salary range (as a tuple of minimum and maximum values).
+  - The city for job search (from a list or entered manually; if "Nesvarbu" is selected, the city filter is left blank).
+- Validates all user inputs for correctness and prompts to retry if values are missing or invalid.
+- Handles all exceptions and displays clear error messages if something goes wrong.
+- Uses the gathered criteria to perform a job search on LinkedIn, applying the specified filters.
+- Collects data on matching job postings (such as job title, company, location, and other relevant details).
+- Outputs the results to a structured Excel file for further analysis or review.
+- Saves the jobs on the LinkedIn website for easy access later.
+
 ## 2LD_SaldainiuAutomatas
 
 This project simulates a candy vending machine. The workflow:
