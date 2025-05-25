@@ -164,7 +164,7 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="753.6000000000001,11770.400000000001" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1309,11773" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="darboSritis" />
       <Variable x:TypeArguments="s:Tuple(x:Int32, x:Int32)" Name="Atlyginimas" />
@@ -193,7 +193,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch sap2010:Annotation.AnnotationText="Tikrina ar tinkama naudotojo darbo srities įvestis" DisplayName="Try Catch blokas darbo srities įvesties tikrinimui" sap:VirtualizedContainerService.HintSize="571.2,1800.8" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+    <TryCatch sap2010:Annotation.AnnotationText="Tikrina ar tinkama naudotojo darbo srities įvestis" DisplayName="Try Catch blokas darbo srities įvesties tikrinimui" sap:VirtualizedContainerService.HintSize="574,1790" sap2010:WorkflowViewState.IdRef="TryCatch_3">
       <TryCatch.Variables>
         <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="darboSriciuMap" />
       </TryCatch.Variables>
@@ -205,7 +205,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="502.4,1079.2" sap2010:WorkflowViewState.IdRef="Sequence_62">
+        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="504,1071" sap2010:WorkflowViewState.IdRef="Sequence_62">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:Boolean" Name="validDarboSritis" />
           </Sequence.Variables>
@@ -215,7 +215,7 @@
               <x:Boolean x:Key="IsPinned">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Assign sap2010:Annotation.AnnotationText="Dictionary/Map duomenu struktura priskiranti lietuviskus pavadinimus į angliskus atitikmenis.&#xA;Toks pasirinkimas įgyvendintas, nes LinkedIn platformoje didžioji dalis skelbimų yra anglų kalba." DisplayName="Lietuviškų darbo sričių priskyrimas į anglų kalbą" sap:VirtualizedContainerService.HintSize="468.8,191.2" sap2010:WorkflowViewState.IdRef="Assign_30">
+          <Assign sap2010:Annotation.AnnotationText="Dictionary/Map duomenu struktura priskiranti lietuviskus pavadinimus į angliskus atitikmenis.&#xA;Toks pasirinkimas įgyvendintas, nes LinkedIn platformoje didžioji dalis skelbimų yra anglų kalba." DisplayName="Lietuviškų darbo sričių priskyrimas į anglų kalbą" sap:VirtualizedContainerService.HintSize="470,187" sap2010:WorkflowViewState.IdRef="Assign_30">
             <Assign.To>
               <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">[darboSriciuMap]</OutArgument>
             </Assign.To>
@@ -237,7 +237,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </Assign>
-          <ui:InputDialog Options="{x:Null}" DisplayName="Darbo srities ivesties langas" sap:VirtualizedContainerService.HintSize="468.8,327.2" sap2010:WorkflowViewState.IdRef="InputDialog_13" IsPassword="False" Label="Pasirinkite darbo sritį:" OptionsString="IT ir programavimas;Finansai ir apskaita;Prekyba ir pardavimai;Gamyba;Sveikatos priežiūra;Logistika;Kita" Title="Darbo srities pasirinkimas">
+          <ui:InputDialog Options="{x:Null}" DisplayName="Darbo srities ivesties langas" sap:VirtualizedContainerService.HintSize="470,324" sap2010:WorkflowViewState.IdRef="InputDialog_13" IsPassword="False" Label="Pasirinkite darbo sritį:" OptionsString="IT ir programavimas;Finansai ir apskaita;Prekyba ir pardavimai;Gamyba;Sveikatos priežiūra;Logistika;Kita" Title="Darbo srities pasirinkimas">
             <ui:InputDialog.Result>
               <OutArgument x:TypeArguments="x:String">[pasirinkimasDarboSritis]</OutArgument>
             </ui:InputDialog.Result>
@@ -248,7 +248,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:InputDialog>
-          <If Condition="[pasirinkimasDarboSritis = &quot;Kita&quot;]" DisplayName="If (Jei pasirinkimas = &quot;Kita&quot;)" sap:VirtualizedContainerService.HintSize="468.8,500.8" sap2010:WorkflowViewState.IdRef="If_16">
+          <If Condition="[pasirinkimasDarboSritis = &quot;Kita&quot;]" DisplayName="If (Jei pasirinkimas = &quot;Kita&quot;)" sap:VirtualizedContainerService.HintSize="470,500" sap2010:WorkflowViewState.IdRef="If_16">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -256,16 +256,16 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <If.Then>
-              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="467.2,206.4" sap2010:WorkflowViewState.IdRef="Sequence_66">
+              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,206" sap2010:WorkflowViewState.IdRef="Sequence_66">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[Not validDarboSritis]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="433.6,146.4" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_3">
+                <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[Not validDarboSritis]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="434,146" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_3">
                   <ui:InterruptibleDoWhile.Body>
-                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,24.8" sap2010:WorkflowViewState.IdRef="Sequence_65">
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_65">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -326,14 +326,14 @@
               </Sequence>
             </If.Then>
             <If.Else>
-              <Sequence DisplayName="Else (Jei pasirinkimas ≠ &quot;Kita&quot;)" sap:VirtualizedContainerService.HintSize="467.2,164.8" sap2010:WorkflowViewState.IdRef="Sequence_67">
+              <Sequence DisplayName="Else (Jei pasirinkimas ≠ &quot;Kita&quot;)" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_67">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Assign DisplayName="Gauti pasirinktos srities anglišką atitikmenį" sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_33">
+                <Assign DisplayName="Gauti pasirinktos srities anglišką atitikmenį" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_33">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:String">[darboSritis]</OutArgument>
                   </Assign.To>
@@ -357,14 +357,14 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="502.4,168.8" sap2010:WorkflowViewState.IdRef="Sequence_68">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="504,168" sap2010:WorkflowViewState.IdRef="Sequence_68">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:MessageBox ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" Caption="Klaida" DisplayName="Message Box isvedantis pagauta klaida" sap:VirtualizedContainerService.HintSize="468.8,108.8" sap2010:WorkflowViewState.IdRef="MessageBox_6" Text="[&quot;Įvyko klaida darbo srities pasirinkimo metu: &quot; + exception.Message]">
+              <ui:MessageBox ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" Caption="Klaida" DisplayName="Message Box isvedantis pagauta klaida" sap:VirtualizedContainerService.HintSize="470,108" sap2010:WorkflowViewState.IdRef="MessageBox_6" Text="[&quot;Įvyko klaida darbo srities pasirinkimo metu: &quot; + exception.Message]">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsPinned">True</x:Boolean>
@@ -376,14 +376,14 @@
         </Catch>
       </TryCatch.Catches>
       <TryCatch.Finally>
-        <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="502.4,348" sap2010:WorkflowViewState.IdRef="Sequence_69">
+        <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="504,346" sap2010:WorkflowViewState.IdRef="Sequence_69">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <WriteLine DisplayName="Veiksmas užbaigtas" sap:VirtualizedContainerService.HintSize="468.8,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="Darbo srities pasirinkimo veiksmas užbaigtas.">
+          <WriteLine DisplayName="Veiksmas užbaigtas" sap:VirtualizedContainerService.HintSize="470,122" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="Darbo srities pasirinkimo veiksmas užbaigtas.">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -391,7 +391,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </WriteLine>
-          <ui:LogMessage DisplayName="Log darbo_sritis" sap:VirtualizedContainerService.HintSize="468.8,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Pasirinkta darbo sritis - &quot; &amp; darboSritis]">
+          <ui:LogMessage DisplayName="Log darbo_sritis" sap:VirtualizedContainerService.HintSize="470,164" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Pasirinkta darbo sritis - &quot; &amp; darboSritis]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -402,7 +402,7 @@
         </Sequence>
       </TryCatch.Finally>
     </TryCatch>
-    <TryCatch sap2010:Annotation.AnnotationText="Tikrina ar tinkama naudotojo atlyginimo įvestis" DisplayName="Try Catch blokas atlyginimo įvesties tikrinimui" sap:VirtualizedContainerService.HintSize="571.2,1668.8" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <TryCatch sap2010:Annotation.AnnotationText="Tikrina ar tinkama naudotojo atlyginimo įvestis" DisplayName="Try Catch blokas atlyginimo įvesties tikrinimui" sap:VirtualizedContainerService.HintSize="573,1659" sap2010:WorkflowViewState.IdRef="TryCatch_2">
       <TryCatch.Variables>
         <Variable x:TypeArguments="scg:Dictionary(x:String, s:Tuple(x:Int32, x:Int32))" Name="atlyginimuMap" />
         <Variable x:TypeArguments="x:Boolean" Name="validAtlyginimas" />
@@ -415,14 +415,14 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="502.4,1091.2" sap2010:WorkflowViewState.IdRef="Sequence_59">
+        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="504,1083" sap2010:WorkflowViewState.IdRef="Sequence_59">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Assign sap2010:Annotation.AnnotationText="Kad butu lengviau linkedIn sistemoje atfiltruot&#xA;Pavercia is &quot;x-y Eur/men&quot; paverciam i &quot;x-y&quot;" DisplayName="Sudarome atlyginimu map duomenu struktura" sap:VirtualizedContainerService.HintSize="468.8,159.2" sap2010:WorkflowViewState.IdRef="Assign_25">
+          <Assign sap2010:Annotation.AnnotationText="Kad butu lengviau linkedIn sistemoje atfiltruot&#xA;Pavercia is &quot;x-y Eur/men&quot; paverciam i &quot;x-y&quot;" DisplayName="Sudarome atlyginimu map duomenu struktura" sap:VirtualizedContainerService.HintSize="470,157" sap2010:WorkflowViewState.IdRef="Assign_25">
             <Assign.To>
               <OutArgument x:TypeArguments="scg:Dictionary(x:String, s:Tuple(x:Int32, x:Int32))">[atlyginimuMap]</OutArgument>
             </Assign.To>
@@ -444,7 +444,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </Assign>
-          <ui:InputDialog Options="{x:Null}" DisplayName="Atlyginimo ivesties langas" sap:VirtualizedContainerService.HintSize="468.8,327.2" sap2010:WorkflowViewState.IdRef="InputDialog_11" IsPassword="False" Label="Pasirinkite pageidaujamą atlyginimo intervalą (bruto, EUR/mėn.):" OptionsString="&lt;1000 EUR/mėn.;1000-1500 EUR/mėn.;1500-2000 EUR/mėn.;2000-2500 EUR/mėn.;2500-3000 EUR/mėn.;&gt;3000 EUR/mėn.;Nesvarbu;Kita" Title="Atlyginimo pasirinkimas">
+          <ui:InputDialog Options="{x:Null}" DisplayName="Atlyginimo ivesties langas" sap:VirtualizedContainerService.HintSize="470,324" sap2010:WorkflowViewState.IdRef="InputDialog_11" IsPassword="False" Label="Pasirinkite pageidaujamą atlyginimo intervalą (bruto, EUR/mėn.):" OptionsString="&lt;1000 EUR/mėn.;1000-1500 EUR/mėn.;1500-2000 EUR/mėn.;2000-2500 EUR/mėn.;2500-3000 EUR/mėn.;&gt;3000 EUR/mėn.;Nesvarbu;Kita" Title="Atlyginimo pasirinkimas">
             <ui:InputDialog.Result>
               <OutArgument x:TypeArguments="x:String">[pasirinktasAtlyginimas]</OutArgument>
             </ui:InputDialog.Result>
@@ -455,7 +455,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:InputDialog>
-          <If Condition="[pasirinktasAtlyginimas = &quot;Kita&quot;]" DisplayName="If (Jei pasirinkimas = &quot;Kita&quot;)" sap:VirtualizedContainerService.HintSize="468.8,544.8" sap2010:WorkflowViewState.IdRef="If_14">
+          <If Condition="[pasirinktasAtlyginimas = &quot;Kita&quot;]" DisplayName="If (Jei pasirinkimas = &quot;Kita&quot;)" sap:VirtualizedContainerService.HintSize="470,542" sap2010:WorkflowViewState.IdRef="If_14">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -463,16 +463,16 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <If.Then>
-              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="467.2,206.4" sap2010:WorkflowViewState.IdRef="Sequence_57">
+              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,206" sap2010:WorkflowViewState.IdRef="Sequence_57">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[Not validAtlyginimas]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="433.6,146.4" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
+                <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[Not validAtlyginimas]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="434,146" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
                   <ui:InterruptibleDoWhile.Body>
-                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,24.8" sap2010:WorkflowViewState.IdRef="Sequence_56">
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_56">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -556,14 +556,14 @@
               </Sequence>
             </If.Then>
             <If.Else>
-              <Sequence DisplayName="Else (Jei pasirinkimas ≠ &quot;Kita&quot;)" sap:VirtualizedContainerService.HintSize="467.2,208.8" sap2010:WorkflowViewState.IdRef="Sequence_58">
+              <Sequence DisplayName="Else (Jei pasirinkimas ≠ &quot;Kita&quot;)" sap:VirtualizedContainerService.HintSize="468,207" sap2010:WorkflowViewState.IdRef="Sequence_58">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Assign sap2010:Annotation.AnnotationText="Kad butu lengviau linkedIn sistemoje atfiltruot&#xA;is &quot;x-y Eur/men&quot; paverciam i &quot;x-y&quot;" DisplayName="Paversti string i numerius" sap:VirtualizedContainerService.HintSize="433.6,148.8" sap2010:WorkflowViewState.IdRef="Assign_29">
+                <Assign sap2010:Annotation.AnnotationText="Kad butu lengviau linkedIn sistemoje atfiltruot&#xA;is &quot;x-y Eur/men&quot; paverciam i &quot;x-y&quot;" DisplayName="Paversti string i numerius" sap:VirtualizedContainerService.HintSize="434,147" sap2010:WorkflowViewState.IdRef="Assign_29">
                   <Assign.To>
                     <OutArgument x:TypeArguments="s:Tuple(x:Int32, x:Int32)">[Atlyginimas]</OutArgument>
                   </Assign.To>
@@ -589,7 +589,7 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="502.4,24.8" sap2010:WorkflowViewState.IdRef="Sequence_60">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="504,25" sap2010:WorkflowViewState.IdRef="Sequence_60">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -602,14 +602,14 @@
         </Catch>
       </TryCatch.Catches>
       <TryCatch.Finally>
-        <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="502.4,348" sap2010:WorkflowViewState.IdRef="Sequence_61">
+        <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="504,346" sap2010:WorkflowViewState.IdRef="Sequence_61">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <WriteLine DisplayName="Veiksmas užbaigtas" sap:VirtualizedContainerService.HintSize="468.8,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="Atlyginimo pasirinkimo veiksmas užbaigtas.">
+          <WriteLine DisplayName="Veiksmas užbaigtas" sap:VirtualizedContainerService.HintSize="470,122" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="Atlyginimo pasirinkimo veiksmas užbaigtas.">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -617,7 +617,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </WriteLine>
-          <ui:LogMessage DisplayName="Log atlyginimas" sap:VirtualizedContainerService.HintSize="468.8,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Atlyginimas pageidaujamas: &quot; &amp; Atlyginimas.Item1.ToString() &amp; &quot; - &quot; &amp; Atlyginimas.Item2.ToString()]">
+          <ui:LogMessage DisplayName="Log atlyginimas" sap:VirtualizedContainerService.HintSize="470,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Atlyginimas pageidaujamas: &quot; &amp; Atlyginimas.Item1.ToString() &amp; &quot; - &quot; &amp; Atlyginimas.Item2.ToString()]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -628,7 +628,7 @@
         </Sequence>
       </TryCatch.Finally>
     </TryCatch>
-    <TryCatch sap2010:Annotation.AnnotationText="Tikrina ar tinkama naudotojo vietos įvestis" DisplayName="Try Catch blokas vietos įvesties tikrinimui" sap:VirtualizedContainerService.HintSize="571.2,746.4" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+    <TryCatch sap2010:Annotation.AnnotationText="Tikrina ar tinkama naudotojo vietos įvestis" DisplayName="Try Catch blokas vietos įvesties tikrinimui" sap:VirtualizedContainerService.HintSize="573,744" sap2010:WorkflowViewState.IdRef="TryCatch_4">
       <TryCatch.Variables>
         <Variable x:TypeArguments="x:Boolean" Name="validMiestas" />
       </TryCatch.Variables>
@@ -640,7 +640,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="416,24.8" sap2010:WorkflowViewState.IdRef="Sequence_77">
+        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_77">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -819,14 +819,14 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,168.8" sap2010:WorkflowViewState.IdRef="Sequence_78">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="Sequence_78">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:MessageBox ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" Caption="Klaida" DisplayName="Message Box isvedantis pagauta klaida" sap:VirtualizedContainerService.HintSize="382.4,108.8" sap2010:WorkflowViewState.IdRef="MessageBox_8" Text="[&quot;Įvyko klaida miesto pasirinkimo metu: &quot; + exception.Message]">
+              <ui:MessageBox ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" Caption="Klaida" DisplayName="Message Box isvedantis pagauta klaida" sap:VirtualizedContainerService.HintSize="382,108" sap2010:WorkflowViewState.IdRef="MessageBox_8" Text="[&quot;Įvyko klaida miesto pasirinkimo metu: &quot; + exception.Message]">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsPinned">True</x:Boolean>
@@ -838,14 +838,14 @@
         </Catch>
       </TryCatch.Catches>
       <TryCatch.Finally>
-        <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="416,348" sap2010:WorkflowViewState.IdRef="Sequence_79">
+        <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="416,346" sap2010:WorkflowViewState.IdRef="Sequence_79">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <WriteLine DisplayName="Veiksmas užbaigtas" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="Miesto pasirinkimo veiksmas užbaigtas.">
+          <WriteLine DisplayName="Veiksmas užbaigtas" sap:VirtualizedContainerService.HintSize="382,122" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="Miesto pasirinkimo veiksmas užbaigtas.">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -853,7 +853,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </WriteLine>
-          <ui:LogMessage DisplayName="Log miestas" sap:VirtualizedContainerService.HintSize="382.4,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Miesto pasirinkimas: &quot; &amp; If(String.IsNullOrEmpty(miestas), &quot;nesvarbus miesto pasirinkimas&quot;, miestas)]">
+          <ui:LogMessage DisplayName="Log miestas" sap:VirtualizedContainerService.HintSize="382,164" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Miesto pasirinkimas: &quot; &amp; If(String.IsNullOrEmpty(miestas), &quot;nesvarbus miesto pasirinkimas&quot;, miestas)]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -864,13 +864,13 @@
         </Sequence>
       </TryCatch.Finally>
     </TryCatch>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Atidaroma &quot;LinkedIn' svetainė" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="571.2,1840.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="03583809-9e92-49db-a2ea-0bef02e2df04" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Atidaroma &quot;LinkedIn' svetainė" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="573,1840" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="03583809-9e92-49db-a2ea-0bef02e2df04" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,1592" sap2010:WorkflowViewState.IdRef="Sequence_33">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1591" sap2010:WorkflowViewState.IdRef="Sequence_33">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1128,7 +1128,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NCheckState>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Pasirenkama &quot;Darbų&quot; skiltis" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="03583809-9e92-49db-a2ea-0bef02e2df04" Version="V4">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Pasirenkama &quot;Darbų&quot; skiltis" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="03583809-9e92-49db-a2ea-0bef02e2df04" Version="V4">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="linkedin.com/feed" CVScreenId="cab038ef-9ddc-4077-82aa-d9cf3a283b33" ContentHash="d4ylyVFQKUyIbIPbvWel6Q" CvTextArea="1569, 251, 52, 24" CvTextArgument="Jobs" CvType="Text" DesignTimeRectangle="1516, 187, 160, 104" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='                                                                                                      Jobs            ' tag='A' /&gt;" Guid="7de7ab04-3c83-431e-aa9a-b7d4c5b1e60f" InformativeScreenshot="71fb980860ec77f35e667b032452a519.png" Reference="ljmz25pgpE2gc3jk2ec7Ig/2oREgryRaUK9LdWhTJMvLw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Feed | LinkedIn' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                   <uix:TargetAnchorable.Anchors>
@@ -1155,7 +1155,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Nustatomas pasirinktas miestas" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="03583809-9e92-49db-a2ea-0bef02e2df04" Text="[miestas + &quot;, Lithuania&quot;]" Version="V4">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Nustatomas pasirinktas miestas" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="03583809-9e92-49db-a2ea-0bef02e2df04" Text="[miestas + &quot;, Lithuania&quot;]" Version="V4">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="linkedin.com/jobs/search" CVScreenId="63809620-0c66-4d61-86d9-39ad435421ea" ContentHash="9PgMTxu-LkeHswDtUVP2Cg" CvElementArea="831, 203, 386, 70" CvTextArea="889, 225, 216, 32" CvTextArgument="Kaunas, Lithuania" CvType="Button" DesignTimeRectangle="830, 211, 369, 64" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='jobs-search-box-location-id-ember358' tag='INPUT' type='text' class='basic-input jobs-search-box__text-input jobs-search-box__text-input--with-clear' aaname='                                    City, state, or zip code                                                               ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="a182075c-32c1-4975-9738-5d3f2432f8a1" InformativeScreenshot="b3c0a4a6baa2863925d6d6511fc0b70c.png" Reference="ljmz25pgpE2gc3jk2ec7Ig/5odYPj2520OY8TTfNHU3fw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Search all Jobs | LinkedIn' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                   <uix:TargetAnchorable.Anchors>
@@ -1181,7 +1181,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V4">
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Sparčiųjų klavišų paspaudimai" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,247" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V4">
               <uix:NKeyboardShortcuts.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
                   <uix:VerifyExecutionOptions.Retry>
@@ -1198,7 +1198,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NKeyboardShortcuts>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="3" DisplayName="Type Into 'Search by title, skill,…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_13" ScopeIdentifier="03583809-9e92-49db-a2ea-0bef02e2df04" Text="[darboSritis]" Version="V4">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="3" DisplayName=" Įrašyti darbo sritį" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286" sap2010:WorkflowViewState.IdRef="NTypeInto_13" ScopeIdentifier="03583809-9e92-49db-a2ea-0bef02e2df04" Text="[darboSritis]" Version="V4">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="linkedin.com/jobs/search" ContentHash="zxJgF3ceh0mI-FCSKA9BlA" DesignTimeRectangle="437, 207, 382, 64" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='jobs-search-box-keyword-id-ember205' tag='INPUT' type='text' class='basic-input jobs-search-box__text-input jobs-search-box__keyboard-text-input jobs-search-global-typeahead__input' aaname='                                Search by title, skill, or company                                                                                  ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="4d1c8590-d323-4a7c-b80c-ac12cdd55532" InformativeScreenshot="a55fda1a6b99b96d0ddca4b993c6e3c2.png" Reference="ljmz25pgpE2gc3jk2ec7Ig/fkTsaiCbXk2cffasPfAabw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IT and software Jobs | LinkedIn' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                   <uix:TargetAnchorable.Anchors>
@@ -1225,7 +1225,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V4">
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Sparčiųjų klavišų paspaudimai" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V4">
               <uix:NKeyboardShortcuts.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
                   <uix:VerifyExecutionOptions.Retry>
@@ -1237,7 +1237,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NKeyboardShortcuts.VerifyOptions>
             </uix:NKeyboardShortcuts>
-            <uix:NMouseScroll KeyModifiers="{x:Null}" DelayBefore="2" Direction="Down" DisplayName="Mouse Scroll 'Jump to active job deta…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="NMouseScroll_2" InteractionMode="HardwareEvents" MovementUnits="50" ScopeIdentifier="03583809-9e92-49db-a2ea-0bef02e2df04" Version="V4">
+            <uix:NMouseScroll KeyModifiers="{x:Null}" DelayBefore="2" Direction="Down" DisplayName="Puslapio slinkimas žemyn" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NMouseScroll_2" InteractionMode="HardwareEvents" MovementUnits="50" ScopeIdentifier="03583809-9e92-49db-a2ea-0bef02e2df04" Version="V4">
               <uix:NMouseScroll.Target>
                 <uix:TargetAnchorable BrowserURL="linkedin.com/jobs/search" ContentHash="QkPfKCvSg0-qk9HVxdL4WA" DesignTimeRectangle="340, 535, 1006, 1314" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='main' tag='DIV' /&gt;" Guid="9b4cbbe9-bb37-4a9c-831b-cde9b3ce40e6" InformativeScreenshot="eab577062ad47c99f7926f34d5050c11.png" Reference="ljmz25pgpE2gc3jk2ec7Ig/syIhaFJJvUypbXb-FRiMIQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IT and Software Jobs | LinkedIn' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Complete" />
               </uix:NMouseScroll.Target>
@@ -1247,7 +1247,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NMouseScroll>
-            <uix:NExtractData AppendResults="False" ContinueOnError="False" DataTable="[darbai]" DisplayName="Extract Table Data 'Extract Table Data'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='pozicijuURL'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='įmonė'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='miestas/tipas'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='pareigos'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='href'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='ul' idx='1' /&gt;&lt;webctrl tag='li' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='strong' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182.4" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="03583809-9e92-49db-a2ea-0bef02e2df04" Version="V4">
+            <uix:NExtractData AppendResults="False" ContinueOnError="False" DataTable="[darbai]" DisplayName=" Gauti darbo pasiūlymų lentelę" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='pozicijuURL'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='įmonė'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='miestas/tipas'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='pareigos'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='href'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='ul' idx='1' /&gt;&lt;webctrl tag='li' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='strong' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="03583809-9e92-49db-a2ea-0bef02e2df04" Version="V4">
               <uix:NExtractData.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.linkedin.com/jobs/search/?currentJobId=4224144810&amp;distance=25&amp;geoId=101060073&amp;keywords=IT%20and%20Software&amp;origin=JOB_SEARCH_PAGE_KEYWORD_HISTORY&amp;refresh=true" ContentHash="fKap2lPJEkGSfMAWQp3nvw" DesignTimeRectangle="340, 639, 976, 6320" DesignTimeScaleFactor="2" ElementType="List" FullSelectorArgument="&lt;webctrl parentid='main' tag='UL' /&gt;" Guid="7784926c-b97a-478e-a7a8-939454999e46" InformativeScreenshot="ad85031db1247ae76a3db25f01d75c9b.png" Reference="ljmz25pgpE2gc3jk2ec7Ig/0bP8V6u-vUiIuKR0AIYyQQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(2) IT and Software Jobs | LinkedIn' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" />
               </uix:NExtractData.Target>
@@ -1270,40 +1270,40 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <ui:BuildDataTable DataTable="[rezultatai]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="571.2,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Įmonė&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Miestas&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Rolė&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Alga&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Nuoroda_x0020_į_x0020_darbo_x0020_pasiūlymą&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName /&gt;&#xA;&lt;/NewDataSet&gt;">
+    <ui:BuildDataTable DataTable="[rezultatai]" DisplayName="Sukurti rezultatų lentelę" sap:VirtualizedContainerService.HintSize="573,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Įmonė&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Miestas&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Rolė&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Alga&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Nuoroda_x0020_į_x0020_darbo_x0020_pasiūlymą&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName /&gt;&#xA;&lt;/NewDataSet&gt;">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsPinned">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:BuildDataTable>
-    <ui:BuildDataTable DataTable="[filtruoti]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="571.2,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_5" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Įmonė&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Miestas&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Rolė&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Alga&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Nuoroda_x0020_į_x0020_darbo_x0020_pasiūlymą&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName /&gt;&#xA;&lt;/NewDataSet&gt;">
+    <ui:BuildDataTable DataTable="[filtruoti]" DisplayName="Sukurti filtruotų rezultatų lentelę" sap:VirtualizedContainerService.HintSize="573,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_5" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Įmonė&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Miestas&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Rolė&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Alga&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Nuoroda_x0020_į_x0020_darbo_x0020_pasiūlymą&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName /&gt;&#xA;&lt;/NewDataSet&gt;">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsPinned">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:BuildDataTable>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[darbai]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="571.2,2281.6" sap2010:WorkflowViewState.IdRef="ForEachRow_1" MaxIterations="25">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Kartoti per visus darbo pasiūlymus" DataTable="[darbai]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="574,2306" sap2010:WorkflowViewState.IdRef="ForEachRow_1" MaxIterations="25">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="569.6,2100" sap2010:WorkflowViewState.IdRef="Sequence_80">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="572,2095" sap2010:WorkflowViewState.IdRef="Sequence_80">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome IT System Administrator  SME Bank  Lin" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="536,1828.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="872dd09d-a7c3-425b-b717-a346a33c7fea" Version="V2">
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Atidaryti darbo skelbimą" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="538,1826" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="872dd09d-a7c3-425b-b717-a346a33c7fea" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="502.4,1540" sap2010:WorkflowViewState.IdRef="Sequence_43">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="504,1537" sap2010:WorkflowViewState.IdRef="Sequence_43">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="darboAprašymas" />
                     </Sequence.Variables>
@@ -1313,14 +1313,14 @@
                         <x:Boolean x:Key="IsPinned">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NGetUrl CurrentUrl="[nuoroda]" DisplayName="Get URL" sap:VirtualizedContainerService.HintSize="468.8,119.2" sap2010:WorkflowViewState.IdRef="NGetUrl_1" Version="V4">
+                    <uix:NGetUrl CurrentUrl="[nuoroda]" DisplayName="Gauti URL nuorodą" sap:VirtualizedContainerService.HintSize="470,119" sap2010:WorkflowViewState.IdRef="NGetUrl_1" Version="V4">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsPinned">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NGetUrl>
-                    <uix:NGetText DisplayName="Get Text 'DK Consulting'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="468.8,189.6" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="872dd09d-a7c3-425b-b717-a346a33c7fea" TextString="[imone]" Version="V4">
+                    <uix:NGetText DisplayName="Gauti įmonės pavadinimą" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="470,189" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="872dd09d-a7c3-425b-b717-a346a33c7fea" TextString="[imone]" Version="V4">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable BrowserURL="linkedin.com/jobs/view/4229409770" CVScreenId="0c414ae8-b2aa-46d9-b12b-acde305d57e1" ContentHash="TudUYIz0eEy0Ienn6IRwoQ" CvType="AnyWordGroup" DesignTimeRectangle="344, 340, 114, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='A' type='' class='tcTfXzowwkrXNKufUchNjzQtJVcFknZFzdVWo ' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="77bcb57d-3b33-47ea-8844-5de6b751571e" InformativeScreenshot="1a7172a1025047afc83d9688e18dc77f.png" Reference="ljmz25pgpE2gc3jk2ec7Ig/SLkoDHktyk2SO2xUNZU-LQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LinkedIn' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                           <uix:TargetAnchorable.Anchors>
@@ -1336,7 +1336,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NGetText>
-                    <uix:NGetText DisplayName="Get Text 'Risk Management Consult…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="468.8,189.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="872dd09d-a7c3-425b-b717-a346a33c7fea" TextString="[darbo_role]" Version="V4">
+                    <uix:NGetText DisplayName="Gauti darbo poziciją" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="470,189" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="872dd09d-a7c3-425b-b717-a346a33c7fea" TextString="[darbo_role]" Version="V4">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable BrowserURL="linkedin.com/jobs/view/4229409770" CVScreenId="600d17b5-2f4d-4aae-bce5-e0a5f750fa26" ContentHash="IvOJU1-PkUub1wYdpsld7w" CvType="AnyWordGroup" DesignTimeRectangle="285, 387, 400, 40" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" Guid="e9b64d08-831b-401b-a2e7-36578992d565" InformativeScreenshot="7a5e0c9a183f30b92735a809d416c398.png" Reference="ljmz25pgpE2gc3jk2ec7Ig/W50qiZchTkSBHonPuFQEcw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LinkedIn' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
                       </uix:NGetText.Target>
@@ -1346,7 +1346,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NGetText>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'See more'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="468.8,225.6" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="872dd09d-a7c3-425b-b717-a346a33c7fea" Version="V4">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Spausti „Rodyti daugiau“" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="470,225" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="872dd09d-a7c3-425b-b717-a346a33c7fea" Version="V4">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="linkedin.com/jobs/view/4232752642" CVScreenId="59dd786b-dc37-45bf-a37e-1c34b89fc8f6" ContentHash="5EAsGVnIxUqRFDMj_ktaCg" CvTextArea="1055, 1533, 140, 30" CvTextArgument="See more" CvType="Text" DesignTimeRectangle="1058, 1527, 136, 40" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='ember40' tag='SPAN' type='' class='artdeco-button__text' aaname='     See more ' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='See more' /&gt;" Guid="1db17cdc-d7f8-4a9d-a617-9962a1e04a62" InformativeScreenshot="92963fd61157297966509b568dde83bd.png" Reference="ljmz25pgpE2gc3jk2ec7Ig/7FpVjgp4Nk-NCJWkfUx0Ig" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IT System Administrator | SME Bank | LinkedIn' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                           <uix:TargetAnchorable.Anchors>
@@ -1372,7 +1372,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NClick>
-                    <ui:GetFullText IgnoreHidden="{x:Null}" DisplayName="Get Full Text 'ARTICLE'" sap:VirtualizedContainerService.HintSize="468.8,139.2" sap2010:WorkflowViewState.IdRef="GetFullText_1">
+                    <ui:GetFullText IgnoreHidden="{x:Null}" DisplayName="Gauti darbo aprašymą" sap:VirtualizedContainerService.HintSize="470,139" sap2010:WorkflowViewState.IdRef="GetFullText_1">
                       <ui:GetFullText.Target>
                         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="328649ea-69c4-4eda-92bd-bf80e58e39f3" InformativeScreenshot="f7886eb3a8c17965ec6bd6bd4294dc1d" Selector="&lt;webctrl id='job-details' tag='DIV' /&gt;">
                           <ui:Target.TimeoutMS>
@@ -1392,7 +1392,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:GetFullText>
-                    <Assign DisplayName="Assign" sap:VirtualizedContainerService.HintSize="468.8,115.2" sap2010:WorkflowViewState.IdRef="Assign_18">
+                    <Assign DisplayName="Ištraukti algos tekstą" sap:VirtualizedContainerService.HintSize="470,115" sap2010:WorkflowViewState.IdRef="Assign_18">
                       <Assign.To>
                         <OutArgument x:TypeArguments="str:Match">[algosMatch]</OutArgument>
                       </Assign.To>
@@ -1419,7 +1419,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </Assign>
-                    <Assign DisplayName="Assign" sap:VirtualizedContainerService.HintSize="468.8,114.4" sap2010:WorkflowViewState.IdRef="Assign_19">
+                    <Assign DisplayName=" Priskirti algą" sap:VirtualizedContainerService.HintSize="470,114" sap2010:WorkflowViewState.IdRef="Assign_19">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[Alga]</OutArgument>
                       </Assign.To>
@@ -1432,21 +1432,21 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </Assign>
-                    <If Condition="[Alga = &quot;&quot;]" DisplayName="If" sap:VirtualizedContainerService.HintSize="468.8,385.6" sap2010:WorkflowViewState.IdRef="If_10">
+                    <If Condition="[Alga = &quot;&quot;]" DisplayName=" Patikrinti ar alga nenurodyta" sap:VirtualizedContainerService.HintSize="470,385" sap2010:WorkflowViewState.IdRef="If_10">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsPinned">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <If.Then>
-                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="467.2,164.8" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_44">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <x:Boolean x:Key="IsPinned">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Assign DisplayName="Assign" sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_20">
+                          <Assign DisplayName="Jei nenurodyta – nustatyti reikšmę &quot;Nenurodyta&quot;" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_20">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:String">[Alga]</OutArgument>
                             </Assign.To>
@@ -1462,7 +1462,7 @@
                         </Sequence>
                       </If.Then>
                       <If.Else>
-                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="467.2,89.6" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,89" sap2010:WorkflowViewState.IdRef="Sequence_45">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1485,7 +1485,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NApplicationCard>
-            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[New Object() {imone, miestas, darbo_role, Alga, nuoroda}]" DataTable="[rezultatai]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="536,211.2" sap2010:WorkflowViewState.IdRef="AddDataRow_1">
+            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[New Object() {imone, miestas, darbo_role, Alga, nuoroda}]" DataTable="[rezultatai]" DisplayName="Pridėti eilutę į rezultatus" sap:VirtualizedContainerService.HintSize="538,209" sap2010:WorkflowViewState.IdRef="AddDataRow_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsPinned">True</x:Boolean>
@@ -1498,23 +1498,24 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsPinned">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ForEachRow>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[rezultatai]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="571.2,1072.8" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Kartoti per rezultatus" DataTable="[rezultatai]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="574,1100" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="467.2,891.2" sap2010:WorkflowViewState.IdRef="Sequence_92">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,889" sap2010:WorkflowViewState.IdRef="Sequence_92">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_42">
+            <Assign DisplayName=" Nuskaityti neapdorotą algą" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_42">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[rawAlga]</OutArgument>
               </Assign.To>
@@ -1527,7 +1528,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_43">
+            <Assign DisplayName="Išvalyti algos reikšmę" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_43">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[cleanAlga]</OutArgument>
               </Assign.To>
@@ -1540,7 +1541,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_45">
+            <Assign DisplayName=" Konvertuoti algą į skaičių" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_45">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Int32">[baselineAlga]</OutArgument>
               </Assign.To>
@@ -1553,21 +1554,21 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </Assign>
-            <If Condition="[Not String.IsNullOrWhiteSpace(cleanAlga) AndAlso&#xD;&#xA;IsNumeric(cleanAlga) AndAlso&#xD;&#xA;CInt(cleanAlga) &gt; Atlyginimas.Item1 AndAlso&#xD;&#xA;CInt(cleanAlga) &lt; Atlyginimas.Item2]" sap:VirtualizedContainerService.HintSize="433.6,490.4" sap2010:WorkflowViewState.IdRef="If_21">
+            <If Condition="[Not String.IsNullOrWhiteSpace(cleanAlga) AndAlso&#xA;IsNumeric(cleanAlga) AndAlso&#xA;CInt(cleanAlga) &gt; Atlyginimas.Item1 AndAlso&#xA;CInt(cleanAlga) &lt; Atlyginimas.Item2]" DisplayName="Tikrinti ar alga intervale" sap:VirtualizedContainerService.HintSize="434,487" sap2010:WorkflowViewState.IdRef="If_21">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsPinned">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,271.2" sap2010:WorkflowViewState.IdRef="Sequence_93">
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,269" sap2010:WorkflowViewState.IdRef="Sequence_93">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[CurrentRow.ItemArray]" DataTable="[filtruoti]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="382.4,211.2" sap2010:WorkflowViewState.IdRef="AddDataRow_2">
+                  <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[CurrentRow.ItemArray]" DataTable="[filtruoti]" DisplayName=" Pridėti filtruotą rezultatą" sap:VirtualizedContainerService.HintSize="382,209" sap2010:WorkflowViewState.IdRef="AddDataRow_2">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsPinned">True</x:Boolean>
@@ -1577,7 +1578,7 @@
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89.6" sap2010:WorkflowViewState.IdRef="Sequence_94">
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_94">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1594,44 +1595,45 @@
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsPinned">True</x:Boolean>
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ForEachRow>
-    <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[rezultatai]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="571.2,148" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Visi darbo pasiūlymai" WorkbookPath="1.xlsx">
+    <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[rezultatai]" DisplayName="Įrašyti visus darbo pasiūlymus į Excel" sap:VirtualizedContainerService.HintSize="571.2,148" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Visi darbo pasiūlymai" WorkbookPath="1.xlsx">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsPinned">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:WriteRange>
-    <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[filtruoti]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="571.2,148" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Filtruoti darbo pasiūlymai" WorkbookPath="1.xlsx">
+    <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[filtruoti]" DisplayName="Įrašyti filtruotus pasiūlymus į Excel" sap:VirtualizedContainerService.HintSize="571.2,148" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Filtruoti darbo pasiūlymai" WorkbookPath="1.xlsx">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsPinned">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:WriteRange>
-    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="571.2,1186.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="1.xlsx">
+    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Naudoti Excel failą" sap:VirtualizedContainerService.HintSize="574,1180" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="1.xlsx">
       <ueab:ExcelApplicationCard.Body>
         <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="472,884.8" sap2010:WorkflowViewState.IdRef="Sequence_81">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="473,879" sap2010:WorkflowViewState.IdRef="Sequence_81">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ueab:CreateTableX OutTableName="{x:Null}" TableName="{x:Null}" DisplayName="Format as Table" HasHeaders="True" sap:VirtualizedContainerService.HintSize="438.4,245.6" sap2010:WorkflowViewState.IdRef="CreateTableX_1" Range="[Excel.Sheet(&quot;Visi darbo pasiūlymai&quot;)]">
+            <ueab:CreateTableX OutTableName="{x:Null}" TableName="{x:Null}" DisplayName="Formatuoti visų pasiūlymų lentelę" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,244" sap2010:WorkflowViewState.IdRef="CreateTableX_1" Range="[Excel.Sheet(&quot;Visi darbo pasiūlymai&quot;)]">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsPinned">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ueab:CreateTableX>
-            <ueab:FormatRangeX DisplayName="Format Cells" sap:VirtualizedContainerService.HintSize="438.4,171.2" sap2010:WorkflowViewState.IdRef="FormatRangeX_1" Range="[Excel.SelectedSheet.Range(&quot;A1:D1&quot;)]">
+            <ueab:FormatRangeX DisplayName="Formatuoti visų lentelės antraštes" sap:VirtualizedContainerService.HintSize="439,170" sap2010:WorkflowViewState.IdRef="FormatRangeX_1" Range="[Excel.SelectedSheet.Range(&quot;A1:D1&quot;)]">
               <ueab:FormatRangeX.Alignment>
                 <ui:AlignmentOptions HorizontalAlignment="xlHAlignCenter" VerticalAlignment="xlVAlignCenter" WrapText="False" />
               </ueab:FormatRangeX.Alignment>
@@ -1647,14 +1649,14 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ueab:FormatRangeX>
-            <ueab:CreateTableX OutTableName="{x:Null}" TableName="{x:Null}" DisplayName="Format as Table" HasHeaders="True" sap:VirtualizedContainerService.HintSize="438.4,245.6" sap2010:WorkflowViewState.IdRef="CreateTableX_2" Range="[Excel.Sheet(&quot;Filtruoti darbo pasiūlymai&quot;)]">
+            <ueab:CreateTableX OutTableName="{x:Null}" TableName="{x:Null}" DisplayName="Formatuoti filtruotų pasiūlymų lentelę" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,244" sap2010:WorkflowViewState.IdRef="CreateTableX_2" Range="[Excel.Sheet(&quot;Filtruoti darbo pasiūlymai&quot;)]">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsPinned">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ueab:CreateTableX>
-            <ueab:FormatRangeX DisplayName="Format Cells" sap:VirtualizedContainerService.HintSize="438.4,162.4" sap2010:WorkflowViewState.IdRef="FormatRangeX_2" Range="[Excel.SelectedSheet.Range(&quot;A1:D1&quot;)]">
+            <ueab:FormatRangeX DisplayName=" Formatuoti filtruotų lentelės antraštes" sap:VirtualizedContainerService.HintSize="439,161" sap2010:WorkflowViewState.IdRef="FormatRangeX_2" Range="[Excel.SelectedSheet.Range(&quot;A1:D1&quot;)]">
               <ueab:FormatRangeX.Alignment>
                 <ui:AlignmentOptions HorizontalAlignment="xlHAlignCenter" VerticalAlignment="xlVAlignCenter" WrapText="False" />
               </ueab:FormatRangeX.Alignment>
@@ -1679,13 +1681,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ueab:ExcelApplicationCard>
-    <ugad:GoogleDriveApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" Timeout="{x:Null}" Account="martinkusarnas888@gmail.com" Connector="uipath-google-drive" DisplayName="Use Google Drive" sap:VirtualizedContainerService.HintSize="571.2,669.6" sap2010:WorkflowViewState.IdRef="GoogleDriveApplicationScope_1" UseConnectionService="False" UserEmail="martinkusarnas888@gmail.com">
+    <ugad:GoogleDriveApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" Timeout="{x:Null}" Account="" Connector="uipath-google-drive" DisplayName=" Naudoti Google Drive" sap:VirtualizedContainerService.HintSize="574,651" sap2010:WorkflowViewState.IdRef="GoogleDriveApplicationScope_1" UseConnectionService="False" UserEmail="martinkusarnas888@gmail.com">
       <ugad:GoogleDriveApplicationScope.Body>
         <ActivityAction x:TypeArguments="ugad:IGoogleDriveTarget">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ugad:IGoogleDriveTarget" Name="GoogleDrive" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,504.8" sap2010:WorkflowViewState.IdRef="Sequence_95">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,486" sap2010:WorkflowViewState.IdRef="Sequence_95">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="DRBFOLDER" />
             </Sequence.Variables>
@@ -1695,14 +1697,14 @@
                 <x:Boolean x:Key="IsPinned">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uga:CreateFolder ContinueOnError="{x:Null}" FolderDescription="{x:Null}" AuthScopesInvalid="False" DisplayName="Create Folder" DriveTarget="[GoogleDrive]" FolderName="[darboSritis + &quot; darbo pasiūlymai / &quot; + pasirinktasAtlyginimas + &quot; / &quot;+ miestas]" sap:VirtualizedContainerService.HintSize="416,216.8" sap2010:WorkflowViewState.IdRef="CreateFolder_1" ParentFriendlyName="Rasti galimi darbai pagal poreikius" ParentId="https://drive.google.com/drive/folders/1NrhN-ftXPgco01HQwnGPop-U0F-CP7RG" ParentIdSelectionMode="Browse" Result="[DRBFOLDER]" SupportsTeamDrives="False">
+            <uga:CreateFolder ContinueOnError="{x:Null}" FolderDescription="{x:Null}" AuthScopesInvalid="False" DisplayName="Sukurti Drive aplanką" DriveTarget="[GoogleDrive]" FolderName="[darboSritis + &quot; darbo pasiūlymai / &quot; + pasirinktasAtlyginimas + &quot; / &quot;+ miestas]" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="CreateFolder_1" ParentFriendlyName="Rasti galimi darbai pagal poreikius" ParentId="https://drive.google.com/drive/folders/1NrhN-ftXPgco01HQwnGPop-U0F-CP7RG" ParentIdSelectionMode="Browse" Result="[DRBFOLDER]" SupportsTeamDrives="False">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsPinned">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uga:CreateFolder>
-            <uga:UploadFilesConnections AllResults="{x:Null}" BrowseFolderId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" DestinationFolder="{x:Null}" FirstResult="{x:Null}" FolderIdBackup="{x:Reference __ReferenceID0}" MultipleFilesToUpload="{x:Null}" OverwriteExistingFile="{x:Null}" SaveToFolderName="{x:Null}" SingleFileToUpload="{x:Null}" AuthScopesInvalid="False" ConflictResolution="Replace" ConnectionId="5c0b27dc-03b6-41f3-a070-259205cedfa0" Convert="False" DisplayName="Upload Files" FilesInputMode="MultipleByBuilder" FolderInputMode="UrlOrId" sap:VirtualizedContainerService.HintSize="416,228" sap2010:WorkflowViewState.IdRef="UploadFilesConnections_1" ManualFolderId="[DRBFOLDER]" UseConnectionService="True">
+            <uga:UploadFilesConnections AllResults="{x:Null}" BrowseFolderId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" DestinationFolder="{x:Null}" FirstResult="{x:Null}" FolderIdBackup="{x:Reference __ReferenceID0}" MultipleFilesToUpload="{x:Null}" OverwriteExistingFile="{x:Null}" SaveToFolderName="{x:Null}" SingleFileToUpload="{x:Null}" AuthScopesInvalid="False" ConflictResolution="Replace" ConnectionId="5c0b27dc-03b6-41f3-a070-259205cedfa0" Convert="False" DisplayName=" Įkelti Excel į Drive" FilesInputMode="MultipleByBuilder" FolderInputMode="UrlOrId" sap:VirtualizedContainerService.HintSize="416,208" sap2010:WorkflowViewState.IdRef="UploadFilesConnections_1" ManualFolderId="[DRBFOLDER]" UseConnectionService="True">
               <uga:UploadFilesConnections.FilesBackup>
                 <usau:BackupSlot x:TypeArguments="ugade:FilesInputMode" StoredValue="MultipleByBuilder">
                   <usau:BackupSlot.BackupValues>

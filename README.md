@@ -14,7 +14,7 @@ This project automates the process of searching for jobs on LinkedIn based on us
 - Uses the gathered criteria to perform a job search on LinkedIn, applying the specified filters.
 - Collects data on matching job postings (such as job title, company, location, and other relevant details).
 - Outputs the results to a structured Excel file for further analysis or review.
-- Saves the jobs on the LinkedIn website for easy access later.
+- Saves the formatted excel file to Google Drive for easy access and sharing.
 
 ## 2LD_SaldainiuAutomatas
 
